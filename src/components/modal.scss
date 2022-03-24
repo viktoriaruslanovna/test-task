@@ -1,0 +1,40 @@
+.modal {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.7);
+
+  .modal__content {
+    width: 35%;
+    padding: 40px;
+    border-radius: 16px;
+    background-color: #fff;
+  }
+
+  &._active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .modal {
+    .modal__content {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    .modal__content {
+      width: 95%;
+    }
+  }
+}

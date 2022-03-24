@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstname": "Vika",
+      "lastname": "Konovalova",
+      "number": "8(800)555-35-35"
+    },
+    {
+      "id": 2,
+      "firstname": "Nastya",
+      "lastname": "Klyiko",
+      "number": "8(800)555-35-35"
+    },
+    {
+      "id": 3,
+      "firstname": "Vanya",
+      "lastname": "Rogak",
+      "number": "8(800)555-35-35"
+    },
+    {
+      "id": 4,
+      "firstname": "Sveta",
+      "lastname": "Orlova",
+      "number": "8(800)555-35-35"
+    },
+    {
+      "id": 5,
+      "firstname": "Nastya",
+      "lastname": "Chugunova",
+      "number": "8(800)555-35-35"
+    }
+  ]
+}

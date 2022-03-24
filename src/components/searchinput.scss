@@ -1,0 +1,11 @@
+.wrapper__search__input {
+  display: flex;
+  justify-content: center;
+
+  .search__input {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    padding: 10px;
+    font-size: 20px;
+  }
+}

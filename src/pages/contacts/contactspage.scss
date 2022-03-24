@@ -1,0 +1,121 @@
+.contacts__page {
+  min-height: 100vh;
+
+  .wrapper__left {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 40px;
+
+    .logout__btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      color: white;
+      background-color: #b22222;
+    }
+  }
+
+  .wrapper__right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 40px;
+
+    .btn__plus {
+      background-color: #fff;
+      border-radius: 10px;
+
+      .plus {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+.contacts__list {
+  display: grid;
+  grid-template-columns: repeat (1, 1fr);
+  row-gap: 40px;
+  padding: 0 3% 60px;
+
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 3%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    .contact {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+
+      .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        & input {
+          width: 100%;
+          color: black;
+        }
+
+        .contact__group {
+          display: flex;
+          flex-direction: column;
+          padding-right: 10px;
+
+          .contact__firstname {
+            font-size: 25px;
+
+            &.error {
+              border: 2px solid#b22222;
+            }
+          }
+          .contact__lastname {
+            margin-top: 5px;
+            font-size: 20px;
+
+            &.error {
+              border: 2px solid#b22222;
+            }
+          }
+        }
+
+        .contact__number {
+          text-align: center;
+          font-size: 20px;
+
+          &.error {
+            border: 2px solid#b22222;
+          }
+        }
+      }
+
+      .contact__btns {
+        display: flex;
+        justify-content: end;
+        column-gap: 10px;
+
+        .contact__btn {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__list {
+    .wrapper {
+      width: 95%;
+    }
+  }
+}
